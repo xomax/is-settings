@@ -1,0 +1,83 @@
+{
+  "material": {
+    "title": "Materiálové náklady",
+    "fields": {
+      "vseobecny": {"title":"Všeobecný materiál","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@material_vseobecny","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "dary": {"title":"Věcné dary (dle vyhlášky č.55/2005 Sb.)","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@material_dary","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "naklady": {"title":"Materiálové náklady","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@material_naklady","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "kancelarske-potreby": {"title":"Kancelářské potřeby","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@material_kancelarske-potreby","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "vybaveni": {"title":"Vybavení do 40.000,-Kč","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@material_vybaveni","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "software": {"title":"Software do 60.000,-Kč","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@material_software","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "potraviny": {"title":"Potraviny","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@material_potraviny","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "pohonne": {"title":"Pohonné hmoty","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@material_pohonne","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "stravovani": {"title":"Stravování","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@material_stravovani","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "vyukovy": {"title":"Výukový materiál","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@material_vyukovy","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "ostatni": {"title":"Ostatní materiál","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@material_ostatni","error":"Hodnota nemůže být vyšší než náklady"}]}}
+    },
+    "attributes": "style='background:#e3f2fd;color:#000;'"
+  },
+  "cestovne": {
+    "title": "Cestovné",
+    "fields": {
+      "spoje": {"title":"Spoje","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@cestovne_spoje","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "doprava": {"title":"Doprava","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@cestovne_doprava","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "zamestnanci": {"title":"Cestovné zaměstnanců (realizátorů)","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@cestovne_zamestnanci","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "skupina": {"title":"Cestovné cílové skupiny projektu","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@cestovne_skupina","error":"Hodnota nemůže být vyšší než náklady"}]}}
+    },
+    "attributes": "style='background:#bbdefb;color:#000;'"
+  },
+  "opravy": {
+    "title": "Opravy a udržování",
+    "fields": {
+      "budovy": {"title":"Opravy a udržování budov","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@opravy_budovy","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "auta": {"title":"Opravy a udržování aut","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@opravy_auta","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "ostatni": {"title":"Ostatní opravy a udržování","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@opravy_ostatni","error":"Hodnota nemůže být vyšší než náklady"}]}}
+    },
+    "attributes": "style='background:#90caf9;color:#000;'"
+  },
+  "nematerial": {
+    "title": "Nemateriálové náklady - služby",
+    "fields": {
+      "tisk": {"title":"Tisk","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@nematerial_tisk","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "ubytovani": {"title":"Ubytování","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@nematerial_ubytovani","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "elektrina": {"title":"Elektřina","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@nematerial_elektrina","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "plyn": {"title":"Plyn","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@nematerial_plyn","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "vodne": {"title":"Vodné","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@nematerial_vodne","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "jine": {"title":"Jiné energie","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@nematerial_jine","error":"Hodnota nemůže být vyšší než náklady"}]}}
+    },
+    "attributes": "style='background:#64b5f6;color:#000;'"
+  },
+  "ostatni": {
+    "title": "Ostatní služby",
+    "fields": {
+      "internet": {"title":"Internet","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@ostatni_internet","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "telekomunikace": {"title":"Telekomunikační poplatky (telefon,fax)","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@ostatni_telekomunikace","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "postovne": {"title":"Poštovné","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@ostatni_postovne","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "spoje": {"title":"Ostatní spoje","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@ostatni_spoje","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "najemne": {"title":"Nájemné","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@ostatni_najemne","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "pravni": {"title":"Právní a ekonomické služby","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@ostatni_pravni","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "skoleni-zamestnancu": {"title":"Školení zaměstnanců","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@ostatni_skoleni-zamestnancu","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "skoleni-skupiny": {"title":"Školení cílové skupiny projektu","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@ostatni_skoleni-skupiny","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "propagace": {"title":"Propagace","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@ostatni_propagace","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "jine": {"title":"Jiné ostatní služby","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@ostatni_jine","error":"Hodnota nemůže být vyšší než náklady"}]}}
+    },
+    "attributes": "style='background:#42a5f5;color:#000;'"
+  },
+  "jine": {
+    "title": "Jiné provozní náklady",
+    "fields": {
+      "odpisy": {"title":"Odpisy","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@jine_odpisy","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "jine": {"title":"Jiné provozní náklady","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@jine_jine","error":"Hodnota nemůže být vyšší než náklady"}]}}
+    },
+    "attributes": "style='background:#2196f3;color:#000;'"
+  },
+  "mzdy": {
+    "title": "Mzdové náklady (hrazené fakturou)",
+    "fields": {
+      "mzdy": {"title":"Ostatní mzdové náklady","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@mzdy_mzdy","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "socialni": {"title":"Ostatní sociální náklady","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@mzdy_socialni","error":"Hodnota nemůže být vyšší než náklady"}]}},
+      "honorare": {"title":"Honoráře (Smlouva o dílo a pod)","comment":true,"cost":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"}]},"donation":{"hint":null,"limit":10,"validations":[{"check":"integer","error":"Obsah pole musí být číslo"},{"check":"value>=::@mzdy_honorare","error":"Hodnota nemůže být vyšší než náklady"}]}}
+    },
+    "attributes": "style='background:#1e88e5;color:#000;'"
+  }
+}
