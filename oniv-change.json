@@ -1,0 +1,62 @@
+{
+  "material": {
+    "title": "1.1 Materiálové náklady",
+    "fields": {
+      "potraviny": {"title":"Potraviny"},
+      "kancelarske-potreby": {"title":"Kancelářské potřeby"},
+      "vybaveni": {"title":"Vybavení (DDHM do 40 tis. Kč)"},
+      "pohonne": {"title":"Pohonné hmoty"},
+      "jine": {"title":"Jiné"}
+    },
+    "attributes": "style='background:#e3f2fd;color:#000;'"
+  },
+  "nematerial-energie": {
+    "title": "1.2.1 Nemateriálové náklady - energie",
+    "fields": {
+      "elektrina": {"title":"Elektřina"},
+      "plyn": {"title":"Plyn"},
+      "vodne": {"title":"Vodné a stočné"},
+      "jine": {"title":"Jiné energie"}
+    },
+    "attributes": "style='background:#bbdefb;color:#000;'"
+  },
+  "nematerial-opravy": {
+    "title": "1.2.2 Nemateriálové náklady - opravy a udržování",
+    "fields": {
+      "budovy": {"title":"Opravy a udržování budov"},
+      "auta": {"title":"Opravy a udržování aut"},
+      "jine": {"title":"Jiné"}
+    },
+    "attributes": "style='background:#90caf9;color:#000;'"
+  },
+  "nematerial-cestovne": {
+    "title": "1.2.3 Nemateriálové náklady - cestovné",
+    "fields": {
+      "zamestnanci": {"title":"Cestovné zaměstnanci"},
+      "klienti": {"title":"Cestovné klienti"}
+    },
+    "attributes": "style='background:#64b5f6;color:#000;'"
+  },
+  "nematerial-ostatni": {
+    "title": "1.2.4 Nemateriálové náklady - ostatni služby",
+    "fields": {
+      "telefon": {"title":"Telefony"},
+      "postovne": {"title":"Poštovné"},
+      "spoje": {"title":"Ostatní spoje"},
+      "najemne": {"title":"Nájemné"},
+      "pravni": {"title":"Právní a ekonomické služby"},
+      "skoleni": {"title":"Školení a kurzy"},
+      "majetek": {"title":"Pořízení DNM do 60 tis. Kč"},
+      "jine": {"title":"Jiné"}
+    },
+    "attributes": "style='background:#42a5f5;color:#000;'"
+  },
+  "jine": {
+    "title": "1.3 Jiné provozní náklady",
+    "fields": {
+      "odpisy": {"title":"Odpisy"},
+      "jine": {"title":"Jiné"}
+    },
+    "attributes": "style='background:#2196f3;color:#000;'"
+  }
+}

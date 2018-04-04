@@ -1,0 +1,30 @@
+{
+  "mzdy": {
+    "title": "2.1 Mzdové náklady",
+    "fields": {
+      "mzdy": {"title":"Hrubé mzdy"},
+      "dpc": {"title":"OON na DPČ"},
+      "dpp": {"title":"OON na DPP"},
+      "ostatni": {"title":"Ostatní mzdové náklady"}
+    },
+    "attributes": "style='background:#a8ffbc;color:#000;'"
+  },
+  "odvody": {
+    "title": "2.2 Odvody na sociální a zdravotní poj.",
+    "fields": {
+      "mzdy": {"title":"Pojistné ke mzdám"},
+      "dpc": {"title":"Pojistné k DPČ"},
+      "dpp": {"title":"Pojistné k DPP"},
+      "ostatni": {"title":"Ostatní pojistné"}
+    },
+    "attributes": "style='background:#b3ffc4;color:#000;'"
+  },
+  "ostatni": {
+    "title": "2.3 Ostatní osobní nákldy",
+    "fields": {
+      "fksp": {"title":"FKSP"},
+      "jine": {"title":"Jiné "}
+    },
+    "attributes": "style='background:#80ff9d;color:#000;'"
+  }
+}
