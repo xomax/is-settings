@@ -74,11 +74,18 @@ Kontrola, zda je hodnota vyšší nebo rovna zadané hodnotě v jiném políčku
 Operuje se stejnou logikou jako **value<**
 
 **percent<=**
+
 Kontrola, zda je hodnota nižší nebo rovna procentu hodnoty jiného pole.
 
 Zápis: `percent<=::procento%@id-pole`
 
 Přiklad: `percent<=::70%@field3` pro kontrolu, že je vyplněná hodnota menší nebo rovna 70 % hodnoty políčka s ID 3 na té samé stránce
+
+**percent>=**
+
+Kontrola, zda je hodnota vyšší nebo rovna procentu hodnoty jiného pole.
+
+Operuje se stejnou logikou jako **percent<=**
 
 
 Platné pro systémy:
